@@ -33,14 +33,14 @@ class Statistics extends StatelessWidget {
         child: Column(
           children: [
             _buildStatistic(
-                context, 'icons/briefcase.png', '4+', 'Years of Experience'),
+                context, 'lib/assets/briefcase.png', '2.5+', 'Years of Experience'),
             const SizedBox(height: 50),
-            _buildStatistic(context, 'icons/menu.png', '${PROJECTS.length}+',
+            _buildStatistic(context, 'lib/assets/app.png', '${PROJECTS.length}+',
                 'Projects Done'),
             const SizedBox(height: 50),
-            _buildStatistic(context, 'icons/happy.png', '50+', 'Happy Clients'),
+            _buildStatistic(context, 'lib/assets/happy.png', '50+', 'Happy Clients'),
             const SizedBox(height: 50),
-            _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
+            _buildStatistic(context, 'lib/assets/coffee.png', '∞', 'Coffee Cups'),
           ],
         ),
       ),

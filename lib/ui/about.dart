@@ -135,10 +135,7 @@ class About extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 30),
-              ElevatedButton(
-                onPressed: () {},
-                child: Text('HIRE ME NOW'),
-              ),
+              
               const SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(

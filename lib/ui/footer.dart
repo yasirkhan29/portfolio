@@ -406,7 +406,7 @@ class Footer extends StatelessWidget {
           onTap: () {
             launch(AppConstants.linkedin);
           },
-          child: AppIcon('lib/assets/link.png'),
+          child: Image.asset("lib/assets/link.png",height: 30,)
         ),
       ];
 }

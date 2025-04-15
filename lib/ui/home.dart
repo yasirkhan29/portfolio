@@ -137,21 +137,22 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       const SizedBox(width: 20),
-                    ElevatedButton(
-  onPressed: _scrollToContactUs,
-  style: ElevatedButton.styleFrom(
-    backgroundColor: Colors.amber, // Set your background color here
-    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12), // Optional padding
-  ),
-  child: Text(
-    'Contact Me',
-    style: TextStyle(
-      color: Colors.white, // Text color
-      fontWeight: FontWeight.bold,
-    ),
-  ),
-),
-
+                      ElevatedButton(
+                        onPressed: _scrollToContactUs,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor:
+                              Colors.amber, // Set your background color here
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 24, vertical: 12), // Optional padding
+                        ),
+                        child: Text(
+                          'Contact Me',
+                          style: TextStyle(
+                            color: Colors.white, // Text color
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                   SizedBox(width: MediaQuery.of(context).size.width * .15),
@@ -218,7 +219,6 @@ class _HomeState extends State<Home> {
                 ListTile(
                   title: ElevatedButton(
                     onPressed: _scrollToContactUs,
-                  
                     child: Text(
                       'Contact Me',
                       style: TextStyle(fontWeight: FontWeight.bold),
@@ -229,7 +229,6 @@ class _HomeState extends State<Home> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                   
                     const SizedBox(width: 20),
                     InkWell(
                       onTap: () {
@@ -241,8 +240,6 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     const SizedBox(width: 20),
-                   
-                  
                   ],
                 ),
                 const SizedBox(height: 20),
@@ -357,7 +354,7 @@ class _HomeState extends State<Home> {
                 ? _scrollToHeader
                 : null, // make sure user cannot click when button hidden
             mini: true,
-            child: AppIcon('icons/double-up-arrow.png', size: 20),
+            child: AppIcon('lib/assets/up.png', size: 20),
           ),
         );
       },
