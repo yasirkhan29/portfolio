@@ -80,6 +80,20 @@ List<Project> PROJECTS = [
       'Git',
     ],
   ),
+   Project(
+    name: 'Into Blog',
+    description:
+    'Into Blog is a modern microblogging platform inspired by apps like Twitter. It allows users to express themselves through short posts, follow others, and engage in real-time conversations.',
+    image: 'lib/assets/intobloger.png',
+    url: 'https://into.blog/',
+    skills: [
+      'Dart',
+      'laravel',
+      'Flutter',
+      'Firebase',
+      'Git',
+    ],
+  ),
     Project(
     name: 'karnival',
     description:
