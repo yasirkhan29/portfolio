@@ -94,6 +94,30 @@ List<Project> PROJECTS = [
       'Git',
     ],
   ),
+   Project(
+    name: 'News Valley',
+    description:
+    'News Valley is all world largest short news App that provides daily news. Never miss a breaking news story or important update again. Personalize your experience and choose the news you want by category: Politics, Business, Health, Entertainment and more. Get the news you want, the way you want.',
+    image: 'lib/assets/newsvelly.jpeg',
+    url: 'https://play.google.com/store/apps/details?id=com.news.valley',
+    skills: [
+      'Dart',
+      'Flutter',
+      'Firebase',
+    ],
+  ),
+    Project(
+    name: 'Vpn Valley',
+    description:
+    ' the fast and stable VPN service with vpn valley. We offer global servers and locations to use as you like. Secure all your connection and surfing. Get completely anonymous and safe with vpn valley! Be sure your data is safe: we have a strict no-logging policy.',
+    image: 'lib/assets/vpn.jpeg',
+    url: 'https://play.google.com/store/apps/details?id=com.logic_valley',
+    skills: [
+      'Dart',
+      'Flutter',
+      'Firebase',
+    ],
+  ),
     Project(
     name: 'karnival',
     description:
