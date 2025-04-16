@@ -37,6 +37,12 @@ dependencies:
   url_launcher: ^6.0.10
   url_launcher_web: ^2.0.4
   mailto: ^2.0.0
+  firebase_core: ^3.13.0
+  firebase_auth: 
+  firebase_storage:
+  cloud_firestore:
+  image_picker:
+  firebase_database: ^11.0.4
 dev_dependencies:
   flutter_test:
     sdk: flutter

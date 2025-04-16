@@ -365,7 +365,7 @@ class Footer extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'Proudly powered by OuahidDev ©${DateTime.now().year}',
+              'Proudly powered by Engr.Muhammad yasir khan ©${DateTime.now().year}',
               style: TextStyle(
                 color: AppColors.greyLight!.withOpacity(.75),
               ),

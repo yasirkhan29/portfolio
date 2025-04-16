@@ -14,7 +14,7 @@ List<Project> PROJECTS = [
     name: 'Cosmo Store',
     description:
         'The Cosmo Store mobile app is a game-changer for the beauty industry, specifically tailored to meet the needs of beauty salons. With a user-friendly interface and a vast selection of high-quality beauty products,Thats why we have carefully curated a comprehensive range of beauty supplies, including skincare, haircare, cosmetics, nail care, and more. With just a few taps on your mobile device, you gain access to a world of professional-grade products that will elevate your salon services',
-    image: 'lib/assets/cosmo.png',
+    image: 'lib/assets/cosmo1.jpeg',
     url: 'https://apps.apple.com/us/app/cosmo-store/id6466153619',
     skills: [
       'Dart',
@@ -27,7 +27,7 @@ List<Project> PROJECTS = [
   Project(
     name: 'Kiran',
     description: 'Qiran.com is a Muslim matrimonial app providing Muslim singles with the largest selection of potential marriage partners. Qiran.com is the leading Muslim Marriage site With almost 5 million profiles, Qiran.com, the Muslim Marriage app, is the best source of matrimonial profiles for Muslim singles. Join now and find out why so many Muslim marriages start with Qiran.com',
-    image: 'lib/assets/kirnt.png',
+    image: 'lib/assets/qiran1.jpeg',
     url:
         'https://play.google.com/store/apps/details?id=com.devdart.qiran',
     skills: [
@@ -42,7 +42,7 @@ List<Project> PROJECTS = [
     name: 'Zaphry Footbal acadmy',
     description:
         'We connect coaches, athletes, and clubs on a totally different level! Personalized programs, group training, historical performance, and more',
-    image: 'lib/assets/zaphry.png',
+    image: 'lib/assets/zaphry.jpg',
     url: 'https://appadvice.com/app/zaphry/1583936192',
     skills: [
       'Dart',
@@ -56,7 +56,7 @@ List<Project> PROJECTS = [
     name: 'Nawai Pakistan',
     description:
         'Nawai Pakistan is a leading Canadian urdu weekly newspaper of the South Asian Community',
-        image: 'lib/assets/new.png',
+        image: 'lib/assets/news1.jpeg',
     url: 'https://play.google.com/store/apps/details?id=com.appcrates.rn.newsapp&pcampaignid=web_share',
     skills: [
      'Dart',
@@ -84,7 +84,7 @@ List<Project> PROJECTS = [
     name: 'Into Blog',
     description:
     'Into Blog is a modern microblogging platform inspired by apps like Twitter. It allows users to express themselves through short posts, follow others, and engage in real-time conversations.',
-    image: 'lib/assets/intobloger.png',
+    image: 'lib/assets/into1.jpeg',
     url: 'https://into.blog/',
     skills: [
       'Dart',
