@@ -26,10 +26,64 @@ List<Project> PROJECTS = [
   ),
   Project(
     name: 'Kiran',
-    description: 'Qiran.com is a Muslim matrimonial app providing Muslim singles with the largest selection of potential marriage partners. Qiran.com is the leading Muslim Marriage site With almost 5 million profiles, Qiran.com, the Muslim Marriage app, is the best source of matrimonial profiles for Muslim singles. Join now and find out why so many Muslim marriages start with Qiran.com',
+    description:
+        'Qiran.com is a Muslim matrimonial app providing Muslim singles with the largest selection of potential marriage partners. Qiran.com is the leading Muslim Marriage site With almost 5 million profiles, Qiran.com, the Muslim Marriage app, is the best source of matrimonial profiles for Muslim singles. Join now and find out why so many Muslim marriages start with Qiran.com',
     image: 'lib/assets/qiran1.jpeg',
-    url:
-        'https://play.google.com/store/apps/details?id=com.devdart.qiran',
+    url: 'https://play.google.com/store/apps/details?id=com.devdart.qiran',
+    skills: [
+      'Dart',
+      'laravel',
+      'Flutter',
+      'Firebase',
+      'Git',
+    ],
+  ),
+  Project(
+    name: 'karnival',
+    description:
+        'Karniver is an application where users can post ads for their cars, phones, or anything else, and buy or sell items. Whether youre looking to sell an old phone, buy a new couch, find a job, or get rid of unused electronics, our app makes the process simple, quick, and secure.',
+    image: 'lib/assets/karniver.jpeg',
+    url: 'https://play.google.com/store/apps/details?id=com.karnival.android',
+    skills: [
+      'Dart',
+      'laravel',
+      'Flutter',
+      'Firebase',
+      'Git',
+    ],
+  ),
+  Project(
+    name: 'Bipeers',
+    description:
+        'Bipeers is a smart geolocation platform designed to revolutionize the way people interact with local businesses. With Bipeers, you find what you need near you, support local entrepreneurs and contribute to the economic development of your city',
+    image: 'lib/assets/bipeer.jpeg',
+    url: 'https://play.google.com/store/apps/details?id=com.bip_comercios.app',
+    skills: [
+      'Dart',
+      'React Native',
+      'Flutter',
+      'Firebase',
+      'Git',
+    ],
+  ),
+  Project(
+    name: 'News Valley',
+    description:
+        'News Valley is all world largest short news App that provides daily news. Never miss a breaking news story or important update again. Personalize your experience and choose the news you want by category: Politics, Business, Health, Entertainment and more. Get the news you want, the way you want.',
+    image: 'lib/assets/newsvelly.jpeg',
+    url: 'https://play.google.com/store/apps/details?id=com.news.valley',
+    skills: [
+      'Dart',
+      'Flutter',
+      'Firebase',
+    ],
+  ),
+  Project(
+    name: 'Milor',
+    description:
+        'Milor application store is hosted on Shopify Inc. They provide us with the online e-commerce platform that allows us to sell our products and Services to you',
+    image: 'lib/assets/milor.jpeg',
+    url: 'https://milor.us/',
     skills: [
       'Dart',
       'laravel',
@@ -56,22 +110,9 @@ List<Project> PROJECTS = [
     name: 'Nawai Pakistan',
     description:
         'Nawai Pakistan is a leading Canadian urdu weekly newspaper of the South Asian Community',
-        image: 'lib/assets/news1.jpeg',
-    url: 'https://play.google.com/store/apps/details?id=com.appcrates.rn.newsapp&pcampaignid=web_share',
-    skills: [
-     'Dart',
-      'laravel',
-      'Flutter',
-      'Firebase',
-      'Git',
-    ],
-  ),
-  Project(
-    name: 'Milor',
-    description:
-    'Milor application store is hosted on Shopify Inc. They provide us with the online e-commerce platform that allows us to sell our products and Services to you',
-    image: 'lib/assets/milor.jpeg',
-    url: 'https://milor.us/',
+    image: 'lib/assets/news1.jpeg',
+    url:
+        'https://play.google.com/store/apps/details?id=com.appcrates.rn.newsapp&pcampaignid=web_share',
     skills: [
       'Dart',
       'laravel',
@@ -80,10 +121,10 @@ List<Project> PROJECTS = [
       'Git',
     ],
   ),
-   Project(
+  Project(
     name: 'Into Blog',
     description:
-    'Into Blog is a modern microblogging platform inspired by apps like Twitter. It allows users to express themselves through short posts, follow others, and engage in real-time conversations.',
+        'Into Blog is a modern microblogging platform inspired by apps like Twitter. It allows users to express themselves through short posts, follow others, and engage in real-time conversations.',
     image: 'lib/assets/into1.jpeg',
     url: 'https://into.blog/',
     skills: [
@@ -94,22 +135,10 @@ List<Project> PROJECTS = [
       'Git',
     ],
   ),
-   Project(
-    name: 'News Valley',
-    description:
-    'News Valley is all world largest short news App that provides daily news. Never miss a breaking news story or important update again. Personalize your experience and choose the news you want by category: Politics, Business, Health, Entertainment and more. Get the news you want, the way you want.',
-    image: 'lib/assets/newsvelly.jpeg',
-    url: 'https://play.google.com/store/apps/details?id=com.news.valley',
-    skills: [
-      'Dart',
-      'Flutter',
-      'Firebase',
-    ],
-  ),
-    Project(
+  Project(
     name: 'Vpn Valley',
     description:
-    ' the fast and stable VPN service with vpn valley. We offer global servers and locations to use as you like. Secure all your connection and surfing. Get completely anonymous and safe with vpn valley! Be sure your data is safe: we have a strict no-logging policy.',
+        ' the fast and stable VPN service with vpn valley. We offer global servers and locations to use as you like. Secure all your connection and surfing. Get completely anonymous and safe with vpn valley! Be sure your data is safe: we have a strict no-logging policy.',
     image: 'lib/assets/vpn.jpeg',
     url: 'https://play.google.com/store/apps/details?id=com.logic_valley',
     skills: [
@@ -118,24 +147,10 @@ List<Project> PROJECTS = [
       'Firebase',
     ],
   ),
-    Project(
-    name: 'karnival',
-    description:
-    'Karniver is an application where users can post ads for their cars, phones, or anything else, and buy or sell items.',
-    image: 'lib/assets/karniver.jpeg',
-    url: '',
-    skills: [
-      'Dart',
-      'laravel',
-      'Flutter',
-      'Firebase',
-      'Git',
-    ],
-  ),
-   Project(
+  Project(
     name: 'Todo',
     description:
-    'ToDo app that helps you stay organized and productive. Easily create, manage, and track your daily tasks, set priorities, and mark tasks as completed. Perfect for personal use, work, or school, and organization.',
+        'ToDo app that helps you stay organized and productive. Easily create, manage, and track your daily tasks, set priorities, and mark tasks as completed. Perfect for personal use, work, or school, and organization.',
     image: 'lib/assets/todo.jpeg',
     url: '',
     skills: [

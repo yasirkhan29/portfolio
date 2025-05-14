@@ -7,13 +7,13 @@ import 'config/colors.dart';
 void main() async {
   await Firebase.initializeApp(
       options: FirebaseOptions(
-          apiKey: "AIzaSyBlK02G7fa2yBOjxNqlKDbIlrY5cInsXGY",
-          authDomain: "portfolio-d18b3.firebaseapp.com",
-          projectId: "portfolio-d18b3",
-          storageBucket: "portfolio-d18b3.firebasestorage.app",
-          messagingSenderId: "82498558018",
-          appId: "1:82498558018:web:f79037473051e25334f5db",
-          measurementId: "G-K35RL9020L"));
+          apiKey: "AIzaSyC1k1xW4nVoHzjUaBGwrS3PqQTmM5mQrSA",
+          authDomain: "portfolio-fce59.firebaseapp.com",
+          projectId: "portfolio-fce59",
+          storageBucket: "portfolio-fce59.firebasestorage.app",
+          messagingSenderId: "1056417460393",
+          appId: "1:1056417460393:web:d2848d1554d2538893b9b8",
+          measurementId: "G-DMP2D06HK0"));
   runApp(MyApp());
 }
 
