@@ -92,6 +92,19 @@ List<Project> PROJECTS = [
       'Git',
     ],
   ),
+    Project(
+    name: 'Urdu Poetry',
+    description:
+        'Urdu Poetry brings the rich tradition of poetry to your mobile device. Dive into the works of famous poets and experience the beauty and depth of their words. Whether youre looking for poetry that reflects life, something funny, or verses about love, this app has it all',
+    image: 'lib/assets/urdupoety.jpeg',
+    url: 'https://play.google.com/store/apps/details?id=com.urdupoetry.app',
+    skills: [
+      'Dart',
+      'Flutter',
+      'Firebase',
+      'Git',
+    ],
+  ),
   Project(
     name: 'Zaphry Footbal acadmy',
     description:
