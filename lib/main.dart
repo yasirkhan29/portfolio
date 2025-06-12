@@ -7,13 +7,13 @@ import 'config/colors.dart';
 void main() async {
   await Firebase.initializeApp(
       options: FirebaseOptions(
-          apiKey: "AIzaSyC1k1xW4nVoHzjUaBGwrS3PqQTmM5mQrSA",
-          authDomain: "portfolio-fce59.firebaseapp.com",
-          projectId: "portfolio-fce59",
-          storageBucket: "portfolio-fce59.firebasestorage.app",
-          messagingSenderId: "1056417460393",
-          appId: "1:1056417460393:web:d2848d1554d2538893b9b8",
-          measurementId: "G-DMP2D06HK0"));
+          apiKey: "AIzaSyB_XUbU8WzK8taWroT3O7YqoMayS9vcr60",
+          authDomain: "portfolio-e237d.firebaseapp.com",
+          projectId: "portfolio-e237d",
+          storageBucket: "portfolio-e237d.firebasestorage.app",
+          messagingSenderId: "1083143175534",
+          appId: "1:1083143175534:web:a006ad7f9720216713957f",
+          measurementId: "G-VS86LWXC9W"));
   runApp(MyApp());
 }
 
@@ -32,4 +32,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//https://portfolio-d18b3.web.app
+//https://portfolio-e237d.web.app
