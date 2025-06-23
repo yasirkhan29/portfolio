@@ -66,6 +66,20 @@ List<Project> PROJECTS = [
       'Git',
     ],
   ),
+    Project(
+    name: 'Bid2bill',
+    description:
+        'Bid2Bill is a location-based marketplace that connects buyers and sellers through a unique bidding system. Buyers place bids on selected products, and local sellers compete by offering their best prices. It’s a smarter, more dynamic way to shop and sell—based on your location.',
+    image: 'lib/assets/bidtobill.jpeg',
+    url: 'https://play.google.com/store/apps/details?id=com.bidtobill.app&pcampaignid=web_share',
+    skills: [
+      'Dart',
+      'Wordpress',
+      'Flutter',
+      'Firebase',
+      'Git',
+    ],
+  ),
   Project(
     name: 'News Valley',
     description:
