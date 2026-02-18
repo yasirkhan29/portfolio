@@ -17,7 +17,7 @@ class Statistics extends StatelessWidget {
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           _buildStatistic(
-              context, 'lib/assets/briefcase.png', '2.5', 'Years of Experience'),
+              context, 'lib/assets/briefcase.png', '3.5', 'Years of Experience'),
           _buildStatistic(context, 'lib/assets/app.png', '${PROJECTS.length}+',
               'Projects Done'),
           _buildStatistic(context, 'lib/assets/happy.png', '50+', 'Happy Clients'),
@@ -33,7 +33,7 @@ class Statistics extends StatelessWidget {
         child: Column(
           children: [
             _buildStatistic(
-                context, 'lib/assets/briefcase.png', '2.5+', 'Years of Experience'),
+                context, 'lib/assets/briefcase.png', '3.5+', 'Years of Experience'),
             const SizedBox(height: 50),
             _buildStatistic(context, 'lib/assets/app.png', '${PROJECTS.length}+',
                 'Projects Done'),

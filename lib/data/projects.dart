@@ -66,18 +66,59 @@ List<Project> PROJECTS = [
       'Git',
     ],
   ),
-    Project(
+  Project(
     name: 'Bid2bill',
     description:
         'Bid2Bill is a location-based marketplace that connects buyers and sellers through a unique bidding system. Buyers place bids on selected products, and local sellers compete by offering their best prices. It’s a smarter, more dynamic way to shop and sell—based on your location.',
     image: 'lib/assets/bidtobill.jpeg',
-    url: 'https://play.google.com/store/apps/details?id=com.bidtobill.app&pcampaignid=web_share',
+    url:
+        'https://play.google.com/store/apps/details?id=com.bidtobill.app&pcampaignid=web_share',
     skills: [
       'Dart',
       'Wordpress',
       'Flutter',
       'Firebase',
       'Git',
+    ],
+  ),
+  Project(
+    name: 'ROTA',
+    description:
+        'Worker Scheduler is a powerful shift scheduling and workforce management app designed for companies and employees. Whether you’re a small business or managing a large team, this app makes employee scheduling, shift tracking, and attendance management simple and efficient.',
+    image: 'lib/assets/rotalogo.PNG',
+    url: 'https://play.google.com/store/apps/details?id=com.softpitch.rota',
+    skills: [
+      'APIs',
+      'Google maps',
+      'Thirdparty api',
+      'Flutter',
+      'Firebase',
+    ],
+  ),
+   Project(
+    name: 'UMS',
+    description:
+        'The UMS Student and Teacher App is designed to streamline academic and administrative processes for both teachers and students. The app introduces modern features to enhance usability, encourage adoption, and ensure seamless academic management.',
+    image: 'lib/assets/ums.PNG',
+    url: 'https://play.google.com/store/apps/details?id=com.ums.mobile',
+    skills: [
+      'APIs',
+      'Thirdparty api',
+      'Flutter',
+      'Firebase',
+    ],
+  ),
+   Project(
+    name: 'ewallet',
+    description:
+        'E-Wallet is your smart personal finance manager that makes money tracking effortless.Record expenses, set budgets, manage debts, and see where your money goes — all in one place.With secure cloud sync, smart reports, and easy budgeting tools, E-Wallet helps you stay in control of your finances anytime, anywhere.',
+    image: 'lib/assets/ewallet.PNG',
+    url: 'https://play.google.com/store/apps/details?id=com.softpitch.ewallet',
+    skills: [
+      'APIs',
+      'Thirdparty api',
+      'Flutter',
+      'Firebase',
     ],
   ),
   Project(
@@ -106,7 +147,7 @@ List<Project> PROJECTS = [
       'Git',
     ],
   ),
-    Project(
+  Project(
     name: 'Urdu Poetry',
     description:
         'Urdu Poetry brings the rich tradition of poetry to your mobile device. Dive into the works of famous poets and experience the beauty and depth of their words. Whether youre looking for poetry that reflects life, something funny, or verses about love, this app has it all',
@@ -117,6 +158,16 @@ List<Project> PROJECTS = [
       'Flutter',
       'Firebase',
       'Git',
+    ],
+  ),
+    Project(
+    name: 'Ludo Ladder',
+    description:
+        'Ludo Ladder is brand new game and allows you to play Ludo with your friends online or offline, It is an enjoyable board game which lets you share some wonderful time with your loved ones. Dont wait any further, get the dice rolling and play Ludo Ladder.',
+    image: 'lib/assets/lodo.PNG',
+    url: 'https://play.google.com/store/apps/details?id=com.ludo.ladder',
+    skills: [
+      'Flutter',
     ],
   ),
   Project(
