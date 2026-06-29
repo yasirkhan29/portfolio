@@ -1,46 +1,86 @@
 import 'package:flutter/material.dart';
 
-import '../data/projects.dart';
 import 'responsive_widget.dart';
 import 'icon.dart';
+import '../config/colors.dart';
 
 class Statistics extends StatelessWidget {
+  const Statistics({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ResponsiveWidget(
       desktopScreen: Container(
         height: 400,
-        color: Colors.black.withOpacity(.7),
+        color: AppColors.black.withValues(alpha: .74),
         padding: EdgeInsets.symmetric(
-          horizontal: MediaQuery.of(context).size.width * .15,
+          horizontal: MediaQuery.of(context).size.width * .1,
         ),
-        child:
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          _buildStatistic(
-              context, 'lib/assets/briefcase.png', '3.5', 'Years of Experience'),
-          _buildStatistic(context, 'lib/assets/app.png', '${PROJECTS.length}+',
-              'Projects Done'),
-          _buildStatistic(context, 'lib/assets/happy.png', '50+', 'Happy Clients'),
-          _buildStatistic(context, 'lib/assets/coffee.png', '∞', 'Coffee Cups'),
-        ]),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            _buildStatistic(
+              context,
+              'lib/assets/briefcase.png',
+              '5+',
+              'Years of Experience',
+            ),
+            _buildStatistic(
+              context,
+              'lib/assets/app.png',
+              '29+',
+              'Projects Done',
+            ),
+            _buildStatistic(
+              context,
+              'lib/assets/happy.png',
+              '50+',
+              'Happy Clients',
+            ),
+            _buildStatistic(
+              context,
+              'lib/assets/coffee.png',
+              '∞',
+              'Coffee Cups',
+            ),
+          ],
+        ),
       ),
       mobileScreen: Container(
-        color: Colors.black54,
+        color: AppColors.black.withValues(alpha: .74),
         padding: EdgeInsets.symmetric(
-          horizontal: MediaQuery.of(context).size.width * .15,
+          horizontal: MediaQuery.of(context).size.width * .1,
           vertical: 50,
         ),
         child: Column(
           children: [
             _buildStatistic(
-                context, 'lib/assets/briefcase.png', '3.5+', 'Years of Experience'),
+              context,
+              'lib/assets/briefcase.png',
+              '5+',
+              'Years of Experience',
+            ),
             const SizedBox(height: 50),
-            _buildStatistic(context, 'lib/assets/app.png', '${PROJECTS.length}+',
-                'Projects Done'),
+            _buildStatistic(
+              context,
+              'lib/assets/app.png',
+              '29+',
+              'Projects Done',
+            ),
             const SizedBox(height: 50),
-            _buildStatistic(context, 'lib/assets/happy.png', '50+', 'Happy Clients'),
+            _buildStatistic(
+              context,
+              'lib/assets/happy.png',
+              '50+',
+              'Happy Clients',
+            ),
             const SizedBox(height: 50),
-            _buildStatistic(context, 'lib/assets/coffee.png', '∞', 'Coffee Cups'),
+            _buildStatistic(
+              context,
+              'lib/assets/coffee.png',
+              '∞',
+              'Coffee Cups',
+            ),
           ],
         ),
       ),

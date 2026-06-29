@@ -15,10 +15,10 @@ import '../config/colors.dart';
 import '../config/constants.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
   @override
-  _HomeState createState() => _HomeState();
+  State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
@@ -52,11 +52,12 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return const Scaffold(
-        body: Center(
+      return Scaffold(
+        backgroundColor: AppColors.black,
+        body: const Center(
           child: CircularProgressIndicator(
-            backgroundColor: Colors.amber,
-            color: Color.fromARGB(255, 240, 241, 215),
+            backgroundColor: AppColors.primaryDark,
+            color: AppColors.white,
           ),
         ),
       );
@@ -71,82 +72,49 @@ class _HomeState extends State<Home> {
   Widget _buildDesktopLayout() {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('lib/assets/beackgournd.jpg'),
-            fit: BoxFit.cover,
-          ),
-        ),
+        decoration: _backgroundDecoration(),
         child: CustomScrollView(
           controller: _scrollController,
           slivers: [
             SliverAppBar(
               key: _headerGlobalKey,
               toolbarHeight: 100,
-              backgroundColor: Colors.transparent,
+              backgroundColor: AppColors.overlay,
               title: Padding(
                 padding: EdgeInsets.only(
                     left: MediaQuery.of(context).size.width * .15),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(1000),
-                  child: Container(
-                    width: 40,
-                    height: 40,
-                    color: AppColors.yellow,
-                    child: Image.asset('lib/assets/logo.jpg'),
-                  ),
-                ),
+                child: _buildLogo(size: 46),
               ),
               flexibleSpace: Container(
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
-                    colors: [Colors.black, Colors.black87, Colors.transparent],
+                    colors: [
+                      AppColors.black,
+                      AppColors.black.withValues(alpha: .94),
+                      AppColors.black.withValues(alpha: .72),
+                    ],
                   ),
                 ),
               ),
-              bottom:  PreferredSize(
-                preferredSize: Size.fromHeight(500),
-                child: Header(),
+              bottom: PreferredSize(
+                preferredSize: const Size.fromHeight(400),
+                child: const Header(),
               ),
               actions: [
                 Row(
                   children: [
-                    MaterialButton(
-                      onPressed: _scrollToAbout,
-                      child: const Text('About Me',
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold)),
-                    ),
-                    MaterialButton(
-                      onPressed: _scrollToStatistics,
-                      child: const Text('Experience',
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold)),
-                    ),
-                    MaterialButton(
-                      onPressed: _scrollToWorkingProcess,
-                      child: const Text('Process',
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold)),
-                    ),
-                    MaterialButton(
-                      onPressed: _scrollToRecentProjects,
-                      child: const Text('Portfolio',
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold)),
-                    ),
+                    _buildNavButton('About Me', _scrollToAbout),
+                    _buildNavButton('Experience', _scrollToStatistics),
+                    _buildNavButton('Process', _scrollToWorkingProcess),
+                    _buildNavButton('Portfolio', _scrollToRecentProjects),
                     const SizedBox(width: 20),
                     ElevatedButton(
                       onPressed: _scrollToContactUs,
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.amber,
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 24, vertical: 12)),
                       child: const Text('Contact Me',
                           style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold)),
+                              fontWeight: FontWeight.bold)),
                     ),
                   ],
                 ),
@@ -168,15 +136,7 @@ class _HomeState extends State<Home> {
           child: Column(
             children: [
               const SizedBox(height: 20),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(1000),
-                child: Container(
-                  width: 100,
-                  height: 100,
-                  color: AppColors.yellow,
-                  child: Image.asset('lib/assets/logo.jpg'),
-                ),
-              ),
+              _buildLogo(size: 100),
               const Divider(),
               ListTile(
                 onTap: _scrollToAbout,
@@ -211,7 +171,7 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   InkWell(
-                    onTap: () => launch(AppConstants.linkedin),
+                    onTap: () => launchUrl(Uri.parse(AppConstants.linkedin)),
                     child: AppIcon('lib/assets/linkedin.png',
                         color: AppColors.black),
                   ),
@@ -223,45 +183,39 @@ class _HomeState extends State<Home> {
         ),
       ),
       body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('lib/assets/beackgournd.jpg'),
-            fit: BoxFit.cover,
-          ),
-        ),
+        decoration: _backgroundDecoration(),
         child: CustomScrollView(
           controller: _scrollController,
           slivers: [
             SliverAppBar(
               key: _headerGlobalKey,
               centerTitle: true,
-              backgroundColor: Colors.transparent,
+              backgroundColor: AppColors.overlay,
               leading: Builder(
                 builder: (context) => InkWell(
                   onTap: () => Scaffold.of(context).openDrawer(),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(1000),
-                    child: Container(
-                      width: 40,
-                      height: 40,
-                      color: AppColors.yellow,
-                      child: Image.asset('lib/assets/logo.jpg'),
-                    ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8),
+                    child: _buildLogo(size: 42),
                   ),
                 ),
               ),
               flexibleSpace: Container(
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
-                    colors: [Colors.black, Colors.black87, Colors.transparent],
+                    colors: [
+                      AppColors.black,
+                      AppColors.black.withValues(alpha: .94),
+                      AppColors.black.withValues(alpha: .72),
+                    ],
                   ),
                 ),
               ),
               bottom: PreferredSize(
-                preferredSize: const Size.fromHeight(350),
-                child: Header(),
+                preferredSize: const Size.fromHeight(300),
+                child: const Header(),
               ),
             ),
             ..._slivers(),
@@ -273,13 +227,13 @@ class _HomeState extends State<Home> {
   }
 
   List<Widget> _slivers() => [
-        SliverToBoxAdapter(key: _aboutGlobaleKey, child:  About()),
+        SliverToBoxAdapter(key: _aboutGlobaleKey, child: const About()),
         SliverToBoxAdapter(key: _statisticsGlobaleKey, child:  Statistics()),
         SliverToBoxAdapter(
-            key: _workingProcessGlobaleKye, child:  WorkingProcess()),
+            key: _workingProcessGlobaleKye, child: const WorkingProcess()),
         SliverToBoxAdapter(
-            key: _recentProjectsGlobaleKey, child:  MyProjects()),
-        SliverToBoxAdapter(key: _contactUsGlobaleKey, child:  ContactUs()),
+            key: _recentProjectsGlobaleKey, child: const MyProjects()),
+        SliverToBoxAdapter(key: _contactUsGlobaleKey, child: const ContactUs()),
         SliverToBoxAdapter(child: Footer()),
       ];
  Widget _buildFab() {
@@ -291,7 +245,7 @@ class _HomeState extends State<Home> {
           opacity: showFab ? 1 : 0,
           duration: const Duration(milliseconds: 500),
           child: FloatingActionButton(
-          backgroundColor: Colors.amber,
+          backgroundColor: AppColors.primary,
              onPressed: () {
                     _scrollController.animateTo(0,
                         duration: const Duration(milliseconds: 500),
@@ -319,6 +273,47 @@ class _HomeState extends State<Home> {
   void _scrollToWorkingProcess() => _scrollTo(_workingProcessGlobaleKye);
   void _scrollToRecentProjects() => _scrollTo(_recentProjectsGlobaleKey);
   void _scrollToContactUs() => _scrollTo(_contactUsGlobaleKey);
+
+  Widget _buildLogo({required double size}) {
+    return Container(
+      width: size,
+      height: size,
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: .1),
+        shape: BoxShape.circle,
+        border: Border.all(color: Colors.white.withValues(alpha: .18)),
+      ),
+      child: ClipOval(
+        child: Image.asset('lib/assets/logo.jpg', fit: BoxFit.cover),
+      ),
+    );
+  }
+
+  Widget _buildNavButton(String title, VoidCallback onPressed) {
+    return TextButton(
+      onPressed: onPressed,
+      style: TextButton.styleFrom(
+        foregroundColor: Colors.white,
+        textStyle: const TextStyle(fontWeight: FontWeight.w700),
+      ),
+      child: Text(title),
+    );
+  }
+
+  BoxDecoration _backgroundDecoration() {
+    return const BoxDecoration(
+      gradient: LinearGradient(
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        colors: [
+          Color(0xFF091010),
+          Color(0xFF0F1616),
+          Color(0xFF101919),
+        ],
+      ),
+    );
+  }
 
   @override
   void dispose() {
